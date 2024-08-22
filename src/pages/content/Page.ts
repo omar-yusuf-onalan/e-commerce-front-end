@@ -1,5 +1,8 @@
+import {FC} from "react";
+import Content from "./Content.ts";
+
 export default interface Page {
     path: string;
-    Component: Function,
-    content: object
+    Component: FC<Content>,
+    content: Content
 }
