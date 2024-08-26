@@ -1,5 +1,5 @@
 import './App.css'
-import pages from "./pages/content/pages"
+import pages from "./pages/pages.ts"
 import {Route, Routes} from "react-router-dom";
 
 function App() {
