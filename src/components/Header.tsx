@@ -26,21 +26,20 @@ const Header: FC<HeaderContent> = ({ brand, navbarItems, icons }) => {
 
     return (
         <>
-            <div className={`flex justify-between items-center flex-col w-full h-24`}>
-                <div className={`flex justify-center items-center gap-8 w-full h-full`}>
-                    <div className={`flex justify-center items-center`}>
-                        <div
-                            className={`flex items-center w-48 h-14 text-2xl leading-8 font-montserrat font-extrabold not-italic text-[#252B42]`}>
-                            {brand}
-                        </div>
+            <div className={`flex justify-center items-center flex-col w-full h-24`}>
+                <div className={`flex justify-evenly items-center w-full h-full`}>
 
-                        <div className={`flex justify-center items-center`}>
-                            {navbarItems.map((navbarItem, index) => (
-                                <div key={index} className={`${navbarItem.showOnDesktop ? "hidden sm:block" : "hidden"}`}>
-                                    {navbarItem.text}
-                                </div>
-                            ))}
-                        </div>
+                    <div
+                        className={`flex items-center w-48 h-14 text-2xl leading-8 font-montserrat font-extrabold not-italic text-[#252B42]`}>
+                        {brand}
+                    </div>
+
+                    <div className={`sm:flex justify-center items-center gap-4 w-1/5 hidden`}>
+                        {navbarItems.map((navbarItem, index) => (
+                            <div key={index} className={`${navbarItem.showOnDesktop ? "hidden sm:block" : "hidden"}`}>
+                                {navbarItem.text}
+                            </div>
+                        ))}
                     </div>
 
                     <div className={`flex justify-center items-center gap-5`}>
