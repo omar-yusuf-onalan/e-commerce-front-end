@@ -1,89 +1,120 @@
-const header = {
+import {faMagnifyingGlass, faShoppingCart, faBars, faUserLarge, faHeart} from "@fortawesome/free-solid-svg-icons";
+import {IconProp} from "@fortawesome/fontawesome-svg-core";
+
+export interface NavbarItem {
+    text: string;
+    dropdown: boolean;
+    showOnMobile: boolean;
+    showOnDesktop: boolean;
+}
+
+export interface Icon {
+    icon: IconProp
+    text: string;
+    dropdown: boolean;
+    showOnMobile: boolean;
+}
+
+export interface HeaderContent {
+    brand: string;
+    navbarItems: NavbarItem[];
+    icons: Icon[];
+}
+
+const header: HeaderContent = {
     brand: "Bandage",
     navbarItems: [
         {
             text: "Home",
             dropdown: false,
-            visibleOnMobile: true,
+            showOnMobile: true,
+            showOnDesktop: true
         },
         {
             text: "Product",
             dropdown: false,
-            visibleOnMobile: true
+            showOnMobile: true,
+            showOnDesktop: false
         },
         {
             text: "Shop",
             dropdown: true,
-            visibleOnMobile: false,
+            showOnMobile: false,
+            showOnDesktop: true
         },
         {
             text: "About",
             dropdown: false,
-            visibleOnMobile: false,
+            showOnMobile: false,
+            showOnDesktop: true
         },
         {
             text: "Blog",
             dropdown: false,
-            visibleOnMobile: false,
+            showOnMobile: false,
+            showOnDesktop: true
         },
         {
             text: "Pricing",
             dropdown: false,
-            visibleOnMobile: true
+            showOnMobile: true,
+            showOnDesktop: false
         },
         {
             text: "Contact",
             dropdown: false,
-            visibleOnMobile: true,
+            showOnMobile: true,
+            showOnDesktop: true
         },
         {
             text: "Pages",
             dropdown: false,
-            visibleOnMobile: false
+            showOnMobile: false,
+            showOnDesktop: true
         }
     ],
     icons: [
         {
-            icon: "fa-solid fa-magnifying-glass",
+            icon: faMagnifyingGlass,
             text: "",
             dropdown: false,
-            visibleOnMobile: true
+            showOnMobile: true
         },
         {
-            icon: "fa-solid fa-cart-shopping",
+            icon: faShoppingCart,
             text: "",
             dropdown: false,
-            visibleOnMobile: true
+            showOnMobile: true
         },
         {
-            icon: "fa-solid fa-bars",
+            icon: faBars,
             text: "",
             dropdown: true,
-            visibleOnMobile: true
+            showOnMobile: true
         },
         {
-            icon: "fa-solid fa-user-large",
+            icon: faUserLarge,
             text: "Login / Register",
             dropdown: false,
-            visibleOnMobile: false
+            showOnMobile: false
         },
         {
-            icon: "fa-solid fa-magnifying-glass",
+            icon: faMagnifyingGlass,
             text: "",
             dropdown: false,
-            visibleOnMobile: false
+            showOnMobile: false
         },
         {
-            icon: "fa-solid fa-cart-shopping",
+            icon: faShoppingCart,
             text: "1",
             dropdown: false,
-            visibleOnMobile: false
+            showOnMobile: false
         },
         {
-            icon: "fa-regular fa-heart",
+            icon: faHeart,
             text: "1",
             dropdown: false,
-            visibleOnMobile: false
+            showOnMobile: false
         }
     ]
 }
