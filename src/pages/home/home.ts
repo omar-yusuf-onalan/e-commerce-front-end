@@ -4,6 +4,7 @@ import header from "./content/header.ts";
 
 const home: Page =  {
     path: "/",
+    // @ts-ignore
     Component: Home,
     content: {
         header: header
