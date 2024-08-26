@@ -1,5 +1,5 @@
 import {FC} from "react";
-import Content from "./content/Content.ts";
+import Content from "../Content.ts";
 
 const Home: FC<Content> = ({content}) => {
     return (

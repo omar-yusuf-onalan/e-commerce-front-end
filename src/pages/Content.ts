@@ -1,3 +1,3 @@
 export default interface Content {
-    [key: string]: any;
+    [key: string]: object;
 }
