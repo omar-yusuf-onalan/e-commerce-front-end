@@ -6,16 +6,17 @@ function App() {
     return (
         <div>
             <Routes>
-                {pages.map(page => {
+                {pages.map(((page, index) => {
                     const {path, Component, content} = page;
 
                     return (
                         <Route
+                            key={index}
                             path={path}
-                            element={<Component content={content}/>}
+                            element={<Component {...content}/>}
                         />
                     )
-                })}
+                }))}
             </Routes>
 
         </div>
