@@ -5,7 +5,6 @@ import {faPhone, faLocation, faMailBulk} from "@fortawesome/free-solid-svg-icons
 export interface linkObject {
     title: string;
     content: string[];
-    hasIcons: boolean;
     icons?: IconDefinition[];
 }
 
@@ -13,6 +12,7 @@ export interface SocialMediaObject {
     icon: IconDefinition;
     visibleOnMobile: boolean;
     visibleOnDesktop: boolean;
+    colorOnMobile: string;
 }
 
 export interface FooterContent {
@@ -38,7 +38,6 @@ const footer: FooterContent = {
                 "We are hiring",
                 "Blog"
             ],
-            hasIcons: false
         },
         {
             title: "Legal",
@@ -48,7 +47,6 @@ const footer: FooterContent = {
                 "We are hiring",
                 "Blog"
             ],
-            hasIcons: false
         },
         {
             title: "Features",
@@ -58,7 +56,6 @@ const footer: FooterContent = {
                 "Live Chat",
                 "Unlimited Support"
             ],
-            hasIcons: false
         },
         {
             title: "Resources",
@@ -68,7 +65,6 @@ const footer: FooterContent = {
                 "Customers",
                 "API"
             ],
-            hasIcons: false
         },
         {
             title: "Get In Touch",
@@ -77,7 +73,6 @@ const footer: FooterContent = {
                 "4517 Washington Ave.",
                 "debra.holt@example.com"
             ],
-            hasIcons: true,
             icons: [
                 faPhone,
                 faLocation,
@@ -90,22 +85,26 @@ const footer: FooterContent = {
         {
             icon: faFacebook,
             visibleOnMobile: true,
-            visibleOnDesktop: true
+            visibleOnDesktop: true,
+            colorOnMobile: "#335BF5"
         },
         {
             icon: faInstagram,
             visibleOnMobile: true,
-            visibleOnDesktop: true
+            visibleOnDesktop: true,
+            colorOnMobile: "#E51F5A"
         },
         {
             icon: faTwitter,
             visibleOnMobile: true,
-            visibleOnDesktop: true
+            visibleOnDesktop: true,
+            colorOnMobile: "#21A6DF"
         },
         {
             icon: faYoutube,
             visibleOnMobile: true,
-            visibleOnDesktop: false
+            visibleOnDesktop: false,
+            colorOnMobile: "#E42F08"
         }
     ]
 }
