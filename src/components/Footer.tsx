@@ -7,20 +7,20 @@ const Footer: FC<FooterContent> = ({title, description, contactUsButton, links, 
     return (
         <div className={`flex justify-center items-center flex-col gap-20 w-full bg-[#252B42] pt-10 pb-10`}>
             <div className={`flex justify-center items-center flex-col gap-10 w-3/5`}>
-                <div className={`flex justify-center items-center flex-col gap-12 w-full`}>
+                <div className={`flex justify-center sm:justify-between items-center sm:items-start flex-col sm:flex-row gap-12 w-full`}>
                     <div className={`flex justify-center items-start flex-col gap-4 w-full`}>
                         <h3 className={`footer-h3`}>{title}</h3>
                         <p className={`footer-p`}>{description}</p>
                     </div>
 
-                    <div className={`flex justify-start items-center w-full`}>
+                    <div className={`flex justify-start sm:justify-end items-center w-full`}>
                         <button className={`button`}>{contactUsButton}</button>
                     </div>
                 </div>
 
             </div>
 
-            <div className={`flex justify-center items-start flex-col gap-6 w-3/5`}>
+            <div className={`flex justify-center sm:justify-start items-start sm:items-start flex-col sm:flex-row gap-6 sm:gap-20 w-3/5`}>
                 {links.map((link, index) => (
                     <div key={index} className={`flex justify-center items-start flex-col gap-3`}>
                         <h4 className={`footer-h4`}>{link.title}</h4>
@@ -43,10 +43,10 @@ const Footer: FC<FooterContent> = ({title, description, contactUsButton, links, 
                 ))}
             </div>
 
-            <div className={`flex justify-center items-start flex-col gap-10 w-3/5`}>
+            <div className={`flex justify-center sm:justify-between items-start flex-col sm:flex-row gap-10 w-3/5`}>
                 <p className={`footer-p`}>{madeBy}</p>
 
-                <div className={`flex justify-center items-center gap-2`}>
+                <div className={`flex justify-center items-center gap-2 sm:gap-4`}>
                     {socialMedia.map((icon, index) => {
                         const mobile = !icon.visibleOnMobile ? "hidden " : "";
                         const desktop = !icon.visibleOnDesktop ? "sm:hidden" : "block"

@@ -115,7 +115,7 @@ body {
 }
 
 .footer-h4 {
-    width: 239px;
+    width: 100%;
 
     font-style: normal;
     font-weight: 700;
@@ -128,7 +128,7 @@ body {
 }
 
 .footer-p {
-    width: 183px;
+    width: 250px;
 
     font-style: normal;
     font-weight: 400;
