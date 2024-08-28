@@ -5,6 +5,7 @@
 body {
     font-family: Montserrat, sans-serif;
 }
+
 .button {
     width: 204px;
     height: 62px;
@@ -16,7 +17,7 @@ body {
 
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 32px;
     color: #FFFFFF;
 
@@ -62,7 +63,6 @@ body {
     }
 }
 
-
 .hero-h4 {
     width: 291px;
     height: 90px;
@@ -99,4 +99,56 @@ body {
     height: 10px;
 
     background-color: #FFFFFF;
+}
+
+.footer-h3 {
+    width: 239px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+
+    letter-spacing: 0.1px;
+
+    color: #FFFFFF;
+}
+
+.footer-h4 {
+    width: 239px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+
+    letter-spacing: 0.1px;
+
+    color: #FFFFFF;
+}
+
+.footer-p {
+    width: 183px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    letter-spacing: 0.2px;
+
+    color: #FFFFFF;
+}
+
+.footer-a {
+    width: 100%;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+
+    letter-spacing: 0.2px;
+
+    color: #FFFFFF;
 }
