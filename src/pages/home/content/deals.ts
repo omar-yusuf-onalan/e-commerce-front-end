@@ -15,21 +15,21 @@ const deals: DealsContent = {
         {
             aboutDeal: "Your Space",
             title: "Unique Life",
-            image: "",
+            image: "../../public/assets/ice-cream.png",
             linkText: "Explore Items",
             link: "#"
         },
         {
             aboutDeal: "Ends Today",
             title: "Elements Style",
-            image: "",
+            image: "../../public/assets/apples.png",
             linkText: "Explore Items",
             link: "#"
         },
         {
             aboutDeal: "Ends Today",
             title: "Elements Style",
-            image: "",
+            image: "../../public/assets/meat.png",
             linkText: "Explore Items",
             link: "#"
         }
