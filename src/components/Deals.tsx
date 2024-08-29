@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 const Deals: FC<DealsContent> = ({content}) => {
     return (
-        <div className={`flex justify-center items-center flex-col gap-4 w-full h-[876px] bg-[#FAFAFA]`}>
+        <div className={`flex justify-center items-center flex-col sm:flex-row gap-4 sm:gap-12 w-full h-[876px] sm:h-[392px] bg-[#FAFAFA]`}>
             {content.map((card, index) => {
                 const {
                     aboutDeal,
