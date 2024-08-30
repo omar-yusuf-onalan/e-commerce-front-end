@@ -4,6 +4,7 @@ import header from "./content/header.ts";
 import hero from "./content/hero.ts";
 import footer from "./content/footer.ts";
 import deals from "./content/deals.ts";
+import bestseller from "./content/bestseller.ts";
 
 const home: Page =  {
     path: "/",
@@ -13,6 +14,7 @@ const home: Page =  {
         header: header,
         hero: hero,
         deals: deals,
+        bestseller: bestseller,
         footer: footer,
     }
 }

@@ -8,20 +8,24 @@ import {FooterContent} from "./content/footer.ts";
 import Footer from "../../components/Footer.tsx";
 import {DealsContent} from "./content/deals.ts";
 import Deals from "../../components/Deals.tsx";
+import {BestsellerContent} from "./content/bestseller.ts";
+import Bestseller from "../../components/Bestseller.tsx";
 
 export interface HomeProps extends Content {
     header: HeaderContent;
     hero: HeroObject[];
-    footer: FooterContent;
     deals: DealsContent;
+    bestseller: BestsellerContent;
+    footer: FooterContent;
 }
 
-const Home: FC<HomeProps> = ({header, hero, footer, deals}) => {
+const Home: FC<HomeProps> = ({header, hero, deals, bestseller, footer}) => {
     return (
         <div>
             <Header {...header}/>
             <Hero hero={hero}/>
             <Deals {...deals}/>
+            <Bestseller {...bestseller}/>
             <Footer {...footer}/>
         </div>
     )
