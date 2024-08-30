@@ -143,6 +143,103 @@ body {
     color: #252B42;
 }
 
+.bestseller-title {
+    width: 304px;
+    height: 32px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+
+    letter-spacing: 0.1px;
+
+    color: #252B42;
+}
+
+.bestseller-category {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+
+    text-align: center;
+    letter-spacing: 0.2px;
+
+}
+
+.bestseller-chevron {
+    box-sizing: border-box;
+
+    padding: 14px 14px;
+
+    width: 20px;
+    height: 20px;
+
+    border: 1px solid #BDBDBD;
+    border-radius: 34px;
+}
+
+.bestseller-name {
+    width: 131px;
+    height: 24px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    text-align: center;
+    letter-spacing: 0.1px;
+
+    color: #252B42;
+}
+
+.bestseller-product-category {
+    width: 146px;
+    height: 24px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    color: #737373;
+}
+
+.bestseller-price {
+    width: 52px;
+    height: 24px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    text-align: center;
+    letter-spacing: 0.1px;
+
+    color: #BDBDBD;
+}
+
+.bestseller-discount {
+    width: 45px;
+    height: 24px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    text-align: center;
+    letter-spacing: 0.1px;
+
+    color: #23856D;
+}
+
 .footer-h3 {
     width: 239px;
 
